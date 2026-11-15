@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  允许明文 HTTP 流量。
+
+  理由：用户可能把模型接口指向局域网自建服务（Ollama、one-api、公司内网网关），
+  这些服务通常没有 HTTPS。默认配置会静默拦掉这类请求，表现为「网络不通」而看不出原因。
+  面向公网的正常用法（各类云厂商 API）本来就是 HTTPS，不受这段配置影响。
+
+  风险提示：如果用户把 Key 填给一个 http:// 地址，Key 会以明文在链路上传输 ——
+  这是用户自己的选择，应用不做拦截，但设置页里应当给出提示。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

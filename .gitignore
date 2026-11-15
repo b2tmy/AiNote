@@ -1,0 +1,55 @@
+# ---------------- 构建产物 ----------------
+build/
+*/build/
+.gradle/
+.kotlin/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+captures/
+
+# ---------------- 本地环境 ----------------
+local.properties
+*.iml
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------- 签名：绝不允许进版本库 ----------------
+keystore.properties
+keystore/
+*.jks
+*.keystore
+*.p12
+signing.properties
+
+# ---------------- 日志与调试产物 ----------------
+*.log
+*.hprof
+*.trace
+
+# adb / uiautomator 的临时 dump（项目根目录）
+/ui*.xml
+/et.xml
+/menu.xml
+/res.xml
+/set.xml
+/sl.xml
+/l2.xml
+/dd*.xml
+/ms*.xml
+/sd*.xml
+/ne.xml
+/pe.xml
+/r[0-9].xml
+/s[0-9].xml
+/a[0-9].xml
+/d[0-9].xml
+
+# 微信操作调试截图（个人调试用，不进仓库）
+docs/wx-*.png
+
+# ---------------- 本地工具输出 ----------------
+tools/*.zip

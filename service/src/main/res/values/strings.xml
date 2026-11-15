@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_label">扫描截图</string>
+    <string name="watcher_channel_name">截图监听</string>
+    <string name="watcher_channel_desc">常驻监听相册里的新截图</string>
+    <string name="watcher_notification_title">智记正在监听截图</string>
+    <string name="watcher_notification_text">截图后会自动分析并写入 AI 笔记本</string>
+    <string name="watcher_notification_paused">截图监听已暂停</string>
+    <string name="share_no_image">没有收到可用的图片</string>
+    <string name="share_added">已加入待分析（%1$d 张）</string>
+    <string name="share_duplicated">这些图已经在库里了</string>
+    <string name="reminder_channel_name">提醒</string>
+    <string name="reminder_channel_desc">日程与待办的到点提醒</string>
+    <string name="reminder_action_snooze">稍后 10 分钟</string>
+    <string name="reminder_action_done">完成</string>
+    <string name="daily_report_channel_name">每日汇报</string>
+    <string name="daily_report_channel_desc">每天定时生成当日回顾</string>
+    <string name="daily_report_title">今天的回顾已经写好了</string>
+</resources>
